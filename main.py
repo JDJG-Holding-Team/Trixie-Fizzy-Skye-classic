@@ -22,5 +22,15 @@ async def on_ready():
   print(f"Id: {bot.user.id}")
 
 
+@bot.event
+async def on_error(event,*args,**kwargs):
+  import traceback
+  more_information=os.sys.exc_info()
+  error_wanted=traceback.format_exc()
+  traceback.print_exc()
+  
+  #print(more_information[0])
+
+
 bot.loop.create_task(startup())
 bot.run(os.environ["TOKEN"])
