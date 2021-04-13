@@ -2,6 +2,7 @@ import discord
 import os
 import ClientConfig
 import asyncio
+import traceback
 
 bot=ClientConfig.bot
 
@@ -24,7 +25,6 @@ async def on_ready():
 
 @bot.event
 async def on_error(event,*args,**kwargs):
-  import traceback
   more_information=os.sys.exc_info()
   error_wanted=traceback.format_exc()
   traceback.print_exc()
