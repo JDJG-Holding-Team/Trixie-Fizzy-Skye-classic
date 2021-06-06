@@ -1,8 +1,5 @@
-import discord
-import os
-import ClientConfig
-import asyncio
-import traceback
+import discord, os , asyncio,traceback
+import ClientConfig, B
 
 bot=ClientConfig.bot
 
@@ -31,6 +28,6 @@ async def on_error(event,*args,**kwargs):
   
   #print(more_information[0])
 
-
+B.b()
 bot.loop.create_task(startup())
 bot.run(os.environ["TOKEN"])
