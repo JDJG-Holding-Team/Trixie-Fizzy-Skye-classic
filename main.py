@@ -6,6 +6,7 @@ import B
 import discord
 
 import ClientConfig
+from cogs import EXTENSIONS
 
 bot = ClientConfig.bot
 
