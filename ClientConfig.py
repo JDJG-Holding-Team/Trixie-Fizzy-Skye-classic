@@ -6,7 +6,7 @@ import re
 import discord
 from discord.ext import commands
 
-class SodaBotClassic(commands.Bot):
+class TrixieSkyeClassic(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -29,5 +29,5 @@ async def get_prefix(client, message):
     return commands.when_mentioned_or(*extras)(client, message)
 
 
-bot = SodaBotClassic(command_prefix=(get_prefix), intents=discord.Intents.all())
+bot = TrixieSkyeClassic(command_prefix=(get_prefix), intents=discord.Intents.all())
 
